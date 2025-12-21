@@ -37,6 +37,7 @@ let mapleader = " "
 let maplocalleader = "\\"
 noremap <c-d> <c-d>zz
 noremap <c-u> <c-u>zz
+vnoremap Y "+y
 vnoremap <leader>p "_dP
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
