@@ -17,4 +17,6 @@ alias gsw='git switch'
 
 # K8s
 alias k=kubectl
+alias kg="k get"
+alias kd="k describe"
 
