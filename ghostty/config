@@ -11,3 +11,6 @@ font-feature = -dlig
 
 bell-features = no-title
 
+# Make SSH work.
+shell-integration-features = ssh-terminfo
+
