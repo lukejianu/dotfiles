@@ -1,3 +1,6 @@
+export CLICOLOR=1
+alias ls='ls -G'
+
 # Git
 alias ga='git add'
 alias gaa='git add .'
@@ -19,4 +22,32 @@ alias gsw='git switch'
 alias k=kubectl
 alias kg="k get"
 alias kd="k describe"
+
+setopt PROMPT_SUBST
+
+function k8s_context() {
+    [[ "$SHOW_K8S" -ne 1 ]] && return
+
+    local ctx=$(/usr/local/bin/kubectl config current-context 2>/dev/null)
+    if [ -n "$ctx" ]; then
+        local len=${#ctx}
+        local mid=$((len / 2))
+
+        local first=${ctx[1,$mid]}
+        local second=${ctx[$mid+2,$len]}
+
+        local cluster=$ctx
+        if [[ "$first" == "$second" ]]; then
+            cluster=$first
+        fi
+
+        cluster=${cluster//-production/}
+        cluster=${cluster//-staging/}
+
+        echo " %F{cyan}($cluster)%f"
+    fi
+}
+
+# Adds the context and also makes the prompt look like Ubuntu.
+PROMPT='%B%F{green}%n@%m%f%b:%B%F{blue}%~%f%b$(k8s_context) $ '
 
