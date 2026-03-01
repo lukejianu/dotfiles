@@ -48,6 +48,6 @@ function k8s_context() {
     fi
 }
 
-# Adds the context and also makes the prompt look like Ubuntu.
-PROMPT='%B%F{green}%n@%m%f%b:%B%F{blue}%~%f%b$(k8s_context) $ '
+# Adds the context and makes prompt look nice.
+PROMPT='%B%F{green}%n@%m%f%b:%B%F{blue}%1~%f%b$(k8s_context) $ '
 
