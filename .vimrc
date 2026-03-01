@@ -49,3 +49,6 @@ if &term =~ "tmux"
     exec "set t_PE=\e[201~"
 endif
 
+" Make really long lines work.
+set re=0
+
