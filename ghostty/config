@@ -1,0 +1,13 @@
+shell-integration-features = no-cursor
+cursor-style = block
+theme = Ubuntu
+font-family = "Ubuntu Mono"
+font-size = 16
+
+# Disables ligatures.
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+bell-features = no-title
+
