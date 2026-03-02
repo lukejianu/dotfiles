@@ -1,11 +1,8 @@
-# Make SSH work.
-shell-integration-features = ssh-terminfo
+shell-integration-features = ssh-terminfo,no-cursor
 
-shell-integration-features = no-cursor
 cursor-style = block
 theme = Ubuntu
-font-family = "Ubuntu Mono"
-font-size = 16
+font-size = 14
 
 # Disables ligatures.
 font-feature = -calt
@@ -15,3 +12,4 @@ font-feature = -dlig
 bell-features = no-title
 
 auto-update-channel = stable
+
