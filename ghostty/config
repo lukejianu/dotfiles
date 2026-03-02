@@ -1,7 +1,7 @@
 shell-integration-features = ssh-terminfo,no-cursor
 
 cursor-style = block
-theme = Ubuntu
+theme = Solarized Dark Patched
 font-size = 14
 
 # Disables ligatures.
