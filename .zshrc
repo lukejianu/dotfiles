@@ -48,6 +48,5 @@ function k8s_context() {
     fi
 }
 
-# Adds the context and makes prompt look nice.
-PROMPT='%B%F{green}%n@%m%f%b %B%F{blue}%1~%f%b$(k8s_context) %# '
-
+# Adds the K8s context.
+PROMPT='%n@%m %1~$(k8s_context) %# '

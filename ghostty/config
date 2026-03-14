@@ -1,7 +1,7 @@
 shell-integration-features = ssh-terminfo,no-cursor
 
 cursor-style = block
-theme = Ubuntu
+theme = Selenized Dark
 font-size = 13
 
 # Disables ligatures.
@@ -13,3 +13,4 @@ bell-features = no-title
 
 auto-update-channel = stable
 
+unfocused-split-opacity = 1
