@@ -49,4 +49,4 @@ function k8s_context() {
 }
 
 # Adds the K8s context.
-PROMPT='%n@%m %1~$(k8s_context) %# '
+PROMPT='%1~$(k8s_context) %# '
