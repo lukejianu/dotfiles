@@ -1,7 +1,6 @@
 shell-integration-features = ssh-terminfo,no-cursor
 
 cursor-style = block
-theme = Selenized Dark
 font-size = 13
 
 # Disables ligatures.
