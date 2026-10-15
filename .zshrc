@@ -16,8 +16,6 @@ alias gs='git status'
 alias gsh='git show'
 alias gsw='git switch'
 
-alias k=kubectl
-alias kg="k get"
-alias kd="k describe"
+source ~/dotfiles/.kube_aliases.sh
 
 PROMPT='%1~ %# '
