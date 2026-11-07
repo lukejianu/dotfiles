@@ -1,3 +1,6 @@
+# I don't want to see random new packages.
+HOMEBREW_NO_UPDATE_REPORT_NEW=1
+
 alias ls='ls -G'
 
 alias ga='git add'
