@@ -1,15 +1,15 @@
+# `no-cursor` is needed to have a block cursor.
 shell-integration-features = ssh-terminfo,no-cursor
 
 cursor-style = block
-font-size = 13
+
+unfocused-split-opacity = 1
 
 # Disables ligatures.
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
+# Disable the bell emoji popping up.
 bell-features = no-title
 
-auto-update-channel = stable
-
-unfocused-split-opacity = 1
